@@ -25,24 +25,9 @@ const CourseSheet = () => {
       //TO PRINT
       for (let i = 0; i < 8; i++) {
         if(sems[i].selected.length > 0){
-          console.log(sems[i].selected[0])
+          console.log(sems[i].selected)
         }
       }
-    }
-
-    function displayList (course){
-      return (
-        <div>
-            <td>course.title</td>
-            <td style={{ height: "25px" }}>
-            <AutoCompleteText 
-                items={courses.filter(course => course.semester === sems.sno) }
-                setCourse = {setCourse} 
-            />
-            </td>
-            <td></td>
-        </div>
-      )
     }
 
   return (
