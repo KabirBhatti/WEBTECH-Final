@@ -9,7 +9,6 @@ import courses from "./components/listCourses.js";
 function App() {
   return (
     <div className="App">
-      <AutoCompleteText items={courses} />
       <CourseSheet />
     </div>
   );
